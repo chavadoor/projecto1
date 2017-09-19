@@ -1,0 +1,31 @@
+{% extends 'rutinas/base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+<h1 class="text-center">Escoge a tu rutina</h1>
+
+</div>
+    <div class="container text-center">
+
+
+{% for rutina in rutina_detail %}
+    <div class="container">
+        <a href="{{ rutina.rutina.url }}">{{ rutina.nombre }}</a>
+
+
+    </div>
+
+    {% endfor %}
+
+
+    </div>
+{{ rutina.nombre }}
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'rutinas/base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+<h1 class="text-center">Escoge a tu genero</h1>
+
+</div>
+
+
+{% for sexo in sexo_list %}
+
+        <a href="{% url 'rutina_list'  pk=sexo.pk %}" class="btn btn-secondary btn-lg btn-block" role="button" >
+
+            {{ sexo }}
+        </a>
+
+
+{% endfor %}
+
+
+
+
+
+
+
+{% endblock %}
